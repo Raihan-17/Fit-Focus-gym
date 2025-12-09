@@ -9,7 +9,7 @@ JSX.Element {
   return (
     <>
       <Navbar />
-      <main className="min-h-[calc(100vh-4rem)]">
+      <main className="min-h-screen bg-slate-900 mt-15">
         <Outlet />
       </main>
       <Footer />
