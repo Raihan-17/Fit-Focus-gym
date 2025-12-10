@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 pt-16 pb-10 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-        {/* LOGO + ABOUT */}
+       
         <div>
           <h2 className="text-3xl font-extrabold tracking-wide text-red-100">
             EVO<span className="text-amber-500">GYM</span>
@@ -72,7 +72,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* SUPPORT */}
+       
         <div>
           <h3 className="text-xl font-semibold text-red-100 mb-4">Support</h3>
           <ul className="space-y-3 text-gray-400">
@@ -99,7 +99,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CONTACT */}
+        
         <div>
           <h3 className="text-xl font-semibold text-red-100 mb-4">
             Contact Info
@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* COPYRIGHT */}
+   
       <div className="border-t border-gray-800 mt-14 pt-6 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} FitNation. All Rights Reserved.
       </div>

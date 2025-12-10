@@ -1,4 +1,3 @@
-// src/api/trainersAPI.ts
 
 export interface Trainer {
   id: number;

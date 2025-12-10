@@ -1,4 +1,4 @@
-// src/components/TrainerCard.tsx
+
 import React from 'react';
 import type { Trainer } from '../api/trainersAPI';
 
@@ -9,12 +9,12 @@ interface TrainerCardProps {
 const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
   return (
     <div className="relative group">
-      {/* Glowing border */}
+  
       <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-orange-500 rounded-3xl blur opacity-30 group-hover:opacity-70 transition-opacity"></div>
       
-      {/* Main card */}
+     
       <div className="relative bg-gray-900 rounded-3xl p-6 h-full">
-        {/* Image */}
+      
         <div className="relative mb-6">
           <div className="aspect-square rounded-2xl overflow-hidden border-2 border-amber-500/30">
             <img 

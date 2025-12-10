@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { motion, AnimatePresence } from 'framer-motion'
-import logo from '../assets/Logo.png'
-import ThemeToggle from './ThemeToggle'
+
 
 type NavItem = {
   label: string
@@ -12,17 +11,17 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   { label: 'Home', to: '/' },
+  { label: 'Trainers', to: '/trainers' },
+  { label: 'Exercises', to: '/exercises' },
   { label: 'Benefits', to: '/benefits' },
   { label: 'Our Classes', to: '/our-classes' },
-  { label: 'Trainers', to: '/trainers' },
-  { label: 'Contact', to: '/contact' }
+  
 ]
 
 export default function Navbar(): JSX.Element {
   const [open, setOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  // Sticky navbar shadow effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
@@ -66,7 +65,7 @@ export default function Navbar(): JSX.Element {
               </NavLink>
             ))}
 
-            {/* Glow Sign In */}
+           
             <NavLink
               to="/login"
               className="relative inline-flex items-center px-4 py-2  font-semibold rounded-lg border-2 border-amber-500 text-amber-600   dark:text-amber-500 hover:shadow-[0_0_15px_4px_rgba(255,178,36,0.6)] transition-all"
@@ -74,8 +73,6 @@ export default function Navbar(): JSX.Element {
               Sign In
             </NavLink>
 
-            {/* Theme Toggle */}
-            {/* <ThemeToggle /> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,7 +85,7 @@ export default function Navbar(): JSX.Element {
           </button>
         </div>
 
-        {/* Mobile Menu Drawer */}
+        
         <AnimatePresence>
           {open && (
             <motion.div
@@ -120,15 +117,12 @@ export default function Navbar(): JSX.Element {
                 <NavLink
                   to="/login"
                   onClick={() => setOpen(false)}
-                  className="block mt-2 px-3 py-2 rounded-md text-base font-semibold border border-amber-500 text-amber-600 dark:text-amber-400 hover:shadow-[0_0_12px_3px_rgba(255,178,36,0.5)] transition-all"
+                  className="block text-center mt-2 px-3 py-2 rounded-md text-base font-semibold border border-amber-500 text-amber-600 dark:text-amber-400 hover:shadow-[0_0_12px_3px_rgba(255,178,36,0.5)] transition-all"
                 >
                   Sign In
                 </NavLink>
 
-                {/* Mobile Theme Toggle */}
-                {/* <div className="px-3 pt-3">
-                  <ThemeToggle />
-                </div> */}
+    
               </div>
             </motion.div>
           )}

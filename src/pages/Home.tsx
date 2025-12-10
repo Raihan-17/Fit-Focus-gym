@@ -5,6 +5,7 @@ import Contact from './Contact'
 import Trainers from './Trainers'
 import Hpage from './Hpage'
 import TrainerCard from '../components/TrainerCard'
+import BodyPartsPage from './exercises/BodyPartsPage'
 
 type Props = {}
 
@@ -13,6 +14,7 @@ const Home = (props: Props) => {
     <div>
       <Hpage/>
       <Trainers/>
+      <BodyPartsPage />
       {/* <Benefits/>
       <OurClasses/>
       <Contact/> */}

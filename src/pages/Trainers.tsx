@@ -1,4 +1,4 @@
-// src/components/TrainersCarousel.tsx
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -8,7 +8,6 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 import TrainerCard from "../components/TrainerCard";
 import { trainersAPI } from "../api/trainersAPI";
 
-// Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
