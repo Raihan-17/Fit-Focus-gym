@@ -12,11 +12,10 @@ const Home = (props: Props) => {
   return (
     <div>
       <Hpage/>
-      {/* <TrainerCard/> */}
-      <Benefits/>
-      <OurClasses/>
       <Trainers/>
-      <Contact/>
+      {/* <Benefits/>
+      <OurClasses/>
+      <Contact/> */}
     </div>
   )
 }

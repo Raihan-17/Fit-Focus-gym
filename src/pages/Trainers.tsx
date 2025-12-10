@@ -51,10 +51,10 @@ const TrainersCarousel: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 py-20">
-      <div className="text-center mb-14">
-        <h1 className="text-5xl font-bold text-white mb-3">Our Trainers</h1>
-        <p className="text-gray-400 text-lg">
+    <div className="min-h-screen bg-amber-50 py-5">
+      <div className="text-center my-14">
+        <h1 className="text-5xl font-bold text-red-900 mb-3">Our Trainers</h1>
+        <p className="text-red-700 text-lg">
           Expert guidance for your fitness journey
         </p>
       </div>
@@ -83,12 +83,12 @@ const TrainersCarousel: React.FC = () => {
           1024: { slidesPerView: 2.5, spaceBetween: 40 },
         }}
         modules={[EffectCoverflow, Autoplay]}
-        className="max-w-5xl mx-auto px-4 pb-16"
+        className="max-w-11/12 mx-auto px-4 pb-5"
       >
         {trainers.map((trainer) => (
           <SwiperSlide
             key={trainer.id}
-            className="!w-72 sm:!w-80 !h-[480px] flex items-center justify-center"
+            className="!w-72 sm:!w-80 ml-8 md:ml-18  flex items-center justify-center"
           >
             <TrainerCard trainer={trainer} />
           </SwiperSlide>

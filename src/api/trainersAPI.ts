@@ -41,7 +41,7 @@ const trainersData: Trainer[] = [
   {
     id: 3,
     name: "Alex Chen",
-    image: "https://images.unsplash.com/photo-1534367507877-0edd93bd013b?w=800&h=800&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1604480133080-602261a680df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGd5bSUyMHRyYWluZXJ8ZW58MHx8MHx8fDA%3D",
     experience: "12 years",
     speciality: ["CrossFit", "HIIT", "Functional"],
     achievements: ["CrossFit Level 3 Trainer"],
@@ -65,7 +65,7 @@ const trainersData: Trainer[] = [
   {
     id: 5,
     name: "David Rodriguez",
-    image: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=800&h=800&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3ltJTIwdHJhaW5lcnxlbnwwfHwwfHx8MA%3D%3D",
     experience: "15 years",
     speciality: ["Senior Fitness", "Rehabilitation"],
     achievements: ["Physical Therapist Assistant"],
@@ -77,7 +77,7 @@ const trainersData: Trainer[] = [
   {
     id: 6,
     name: "Emily Thompson",
-    image: "https://images.unsplash.com/photo-1598974357801-cbca100e5d10?w=800&h=800&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=800&h=800&fit=crop&crop=face",
     experience: "9 years",
     speciality: ["Prenatal", "Postpartum", "Women's Health"],
     achievements: ["Pre/Post Natal Specialist"],
