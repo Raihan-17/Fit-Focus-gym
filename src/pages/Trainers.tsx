@@ -1,23 +1,14 @@
 
-"use client";
 
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 import TrainerCard from "../components/TrainerCard";
-import { trainersAPI } from "../api/trainersAPI";
+import trainersAPI, { Trainer } from "../api/trainersAPI";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-
-interface Trainer {
-  id: number;
-  name: string;
-  specialty: string;
-  image: string;
-}
 
 const TrainersCarousel: React.FC = () => {
   const [trainers, setTrainers] = useState<Trainer[]>([]);
@@ -59,11 +50,11 @@ const TrainersCarousel: React.FC = () => {
       </div>
 
       <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
+        effect="coverflow"
+        grabCursor
+        centeredSlides
+        loop
+        slidesPerView="auto"
         coverflowEffect={{
           rotate: 40,
           stretch: 0,
@@ -72,7 +63,7 @@ const TrainersCarousel: React.FC = () => {
           slideShadows: true,
         }}
         autoplay={{
-          delay: 2800,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -82,12 +73,12 @@ const TrainersCarousel: React.FC = () => {
           1024: { slidesPerView: 2.5, spaceBetween: 40 },
         }}
         modules={[EffectCoverflow, Autoplay]}
-        className="max-w-11/12 mx-auto px-4 pb-5"
+        className="max-w-[90%] mx-auto px-4 pb-10"
       >
         {trainers.map((trainer) => (
           <SwiperSlide
             key={trainer.id}
-            className="!w-72 sm:!w-80 ml-8 md:ml-18  flex items-center justify-center"
+            className="!w-72 sm:!w-80 flex items-center justify-center"
           >
             <TrainerCard trainer={trainer} />
           </SwiperSlide>

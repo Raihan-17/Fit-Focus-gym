@@ -1,11 +1,11 @@
-import React from 'react'
 
-type Props = {}
 
-const OurClasses = (props: Props) => {
+const OurClasses = () => {
   return (
-    <div>OurClasses</div>
-  )
-}
+    <div>
+      
+    </div>
+  );
+};
 
-export default OurClasses
+export default OurClasses;

@@ -1,11 +1,11 @@
-import React from 'react'
 
-type Props = {}
 
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

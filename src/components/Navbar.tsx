@@ -18,7 +18,7 @@ const navItems: NavItem[] = [
   
 ]
 
-export default function Navbar(): JSX.Element {
+export default function Navbar(){
   const [open, setOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 

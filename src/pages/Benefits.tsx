@@ -1,11 +1,13 @@
-import React from 'react'
 
-type Props = {}
 
-const Benefits = (props: Props) => {
+
+
+const Benefits = () => {
   return (
-    <div>Benefits</div>
-  )
-}
+    <div>
+      
+    </div>
+  );
+};
 
-export default Benefits
+export default Benefits;

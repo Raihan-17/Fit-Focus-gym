@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import HomePageText from "../assets/HomePageText.png";
 import HomePageGraphic from "../assets/HomePageGraphic.png";
 import SponsorRedBull from "../assets/SponsorRedBull.png";
